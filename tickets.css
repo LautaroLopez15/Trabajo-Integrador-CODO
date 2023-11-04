@@ -1,0 +1,463 @@
+
+.nav-container
+{
+    background-color:rgba(53,58,64,255);
+    display:flex;
+    align-items:center;
+    width:100%;
+    justify-content:center;
+    gap:300px;
+}
+
+.nav-div1
+{
+    display:flex;
+    align-items: center;
+    margin-left:100px;
+}
+
+.Bs-As
+{
+    font-size: 28px;
+}
+
+
+
+.nav-div2
+{
+    display:flex;
+    justify-content:space-evenly;
+    flex:1;
+    margin-right:100px;
+}
+
+.home-2
+{
+    text-align:center;
+    width:70rem;
+    height:74%;
+    
+    margin:auto;
+    margin-top:2rem;
+}
+
+
+.container-tickets
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    height:13rem;
+    gap:0.5rem;
+    justify-content:center;
+}
+
+.estudiante
+{
+    border:1px solid rgba(4,125,254,255);
+}
+
+.li-1
+{
+    margin:0.5rem;
+}
+
+.li-2
+{
+    margin:0.5rem;
+    font:300 1rem 'roboto';
+}
+
+.li-3
+{
+    font-weight:700;
+    margin:1.5rem;
+}
+
+.li-4
+{
+    margin:0.5rem;
+    font-size:0.9rem;
+    color:gray;
+}
+
+.trainee
+{
+    border:1px solid rgba(150,213,223,255);
+
+}
+
+.junior
+{
+    border:1px solid rgba(255,193,10,255);
+}
+
+
+
+.container-info
+{
+    display:block;
+    margin-top:1rem;
+}
+
+.container-info ul
+{
+    margin-top:1rem;
+}
+
+.li-venta
+{
+    font-size:1rem;
+    margin-bottom:0.4rem;
+}
+
+.li-valor
+{
+    font-size:2.5rem;
+}
+
+
+ul
+{
+    list-style:none;
+    padding-inline:0rem;
+    margin-inline:0rem;
+    
+}
+
+.form-div div
+{
+    margin-bottom:1.5rem;
+}
+
+.div-1
+{
+    display:flex;
+    flex:1;
+    gap:1rem;
+}
+
+.form-div input
+{
+   
+    height:3rem;
+    width:100%;
+    border:1px solid gray;
+    border-radius:0.4rem;
+    font-size:1.2rem;
+    padding-left:0.7rem;
+}
+
+
+.container-form-2
+{
+    display:flex;
+    justify-content:center; 
+    gap:1rem;
+}
+
+
+ .label
+ {
+    margin-bottom:0.5rem;
+    display:inline-block;
+ }
+
+
+.container-form-2 div
+{
+    width:100%;
+    text-align: left;
+}
+
+.div-2 input,.div-2 select
+{
+    width:100%;
+    height:3rem;
+    font-size:1.2rem;
+    padding-left:0.7rem;
+    border-radius:0.4rem;
+    border:1px solid gray;
+
+}
+
+ #select option,#select:focus
+{
+    outline:none;
+} 
+
+.container-total
+{
+    background-color:rgba(204,229,255,255);
+    padding:0.5rem;
+    border-radius:0.3rem;
+    margin:1.5rem 0rem;
+    text-align: left;
+    border:1px solid rgba(204,229,255,255);
+    color:rgb(59, 57, 57);
+}
+
+.container-total p
+{
+    margin: 0;
+}
+
+.form-buttons
+{
+    display:flex;
+    gap:1rem;
+}
+
+.form-buttons input
+{
+    width:50%;
+    height:3rem;
+    border-radius: 0.3rem;
+    background-color:rgba(151,201,62,255);
+    border:none;
+    color:white;
+    font-size:1.2rem;
+}
+
+
+
+
+
+
+
+
+
+footer
+{
+    background-image:linear-gradient(90deg,rgba(30,63,82,255),rgba(30,81,110,255));
+    display:flex;
+    width:100%;
+    height:7rem;
+    justify-content:center;
+    align-items:center;
+    overflow-wrap:break-word;
+    position: absolute;
+    bottom:0;
+}
+
+footer div
+{
+    color:white;
+    font-size:16px;
+    margin:35px;
+    width:130px;
+    overflow-wrap:break-word;
+    white-space:pre-line;
+    text-align: center;
+    font-weight:300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.W,.Bs-As
+{
+    color:white;
+}
+.G
+{
+    color:rgba(153,157,160,255);
+    
+}
+
+.G:hover
+{
+    color:rgb(226, 216, 216);
+}
+
+.V
+{
+    
+    color:rgba(125,198,62,255);
+    position:relative;
+}
+
+.v::after
+{
+    position:absolute;
+    content:"";
+    background-color:rgb(168, 164, 164);
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px;
+    transform-origin:right;
+    transition:transform 0.3s;
+    transform:scaleX(0);
+}
+
+.v:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition:transform 0.3s;
+}
+
+
+a
+{
+    text-decoration:none;
+}
+
+
+body,html
+{
+    margin:0px;
+    padding:0px;
+}
+
+
+body
+{
+    font-family:'roboto',sans-serif;
+    font-size:23px;
+    position:relative;
+}
+
+
+
+
+@media (min-width:360px) and (max-width:1023px)
+{
+    
+    body,html
+    {
+        font-size:16px;
+    }
+
+    .nav-container
+    {
+        gap:0.1rem;
+        flex-wrap:wrap;
+    }
+
+    .nav-div1,.nav-div2
+    {
+        margin:0;
+        gap:0.1rem;
+        font-size:0.8rem;
+        text-align:center;
+    }
+
+    .home-2
+    {
+        width:90%;
+        height:auto;
+        margin-top:1rem;
+    }
+
+    .container-tickets
+    {
+        grid-template-columns:1fr;
+        height:auto;
+    }
+
+
+  
+ 
+    form
+    {
+        margin-bottom:1rem;
+    }
+
+    
+
+    footer
+    {
+        flex-wrap: wrap;
+        bottom:0px;
+        position: relative;
+    }
+
+    footer div
+    {
+        margin:0.1rem;
+        font-size:0.8rem;
+    }
+
+
+
+}
+
+@media (min-width:1024px) and (max-width:1820px)
+{
+
+    body,html
+    {
+        font-size:16px;
+         height:100%;
+    }
+
+    .nav-container
+    {
+        gap:0.1rem;
+    }
+
+    .nav-div1,.nav-div2
+    {
+        margin:1rem;
+        gap:0.1rem;
+        text-align:center;
+    }
+
+    .nav-div1
+    {
+        margin-left:2rem;
+        /* border:1px solid red; */
+    }
+
+    .home-2
+    {
+        width:90%;
+        height:auto;
+        margin-top:1rem;
+    }
+
+    .container-tickets
+    {
+        grid-template-columns:1fr 1fr 1fr;
+        height:auto;
+    }
+
+
+    form
+    {
+        margin:0;
+        margin-bottom:1rem;
+    }
+
+    
+
+    footer
+    {
+        flex-wrap: wrap;
+        bottom:-2px;
+        position: absolute;
+    }
+
+    footer div
+    {
+        margin:0.1rem;
+        font-size:0.8rem;
+    }
+
+
+
+}

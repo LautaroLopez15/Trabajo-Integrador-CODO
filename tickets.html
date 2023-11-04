@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tickets</title>
+    <link rel="stylesheet" href="tickets.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav-container">
+
+            <div class="nav-div1">
+
+
+                <a href="main.html"><div class="Bs-As" > Conf Bs As </div></a>
+
+
+            </div>
+
+            <div class="nav-div2">
+
+                <div>
+                    <p class="G">La conferencia</p>
+                </div>
+                <div>
+                    <p class="G">Los oradores</p>
+                </div>
+                <div>
+                    <p class="G">El lugar y la fecha</p>
+                </div>
+                <div>
+                    <p class="W">Conviértete en orador</p>
+                </div>
+                <div>
+                    <p class="V">Comprar tickets</p>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="home-2">
+            <div class="container-tickets">
+                <div class="estudiante">
+                    <ul>
+                        <li class="li-1">Estudiante</li>
+                        <li class="li-2">Tienen un descuento</li>
+                        <li class="li-3">80&#37;</li>
+                        <li class="li-4">&#42;Presentar documentación</li>
+                    </ul>
+                    
+                </div>
+                <div class="trainee">
+                    <ul>
+                        <li class="li-1">Trainee</li>
+                        <li class="li-2">Tienen un descuento</li>
+                        <li class="li-3">50&#37;</li>
+                        <li class="li-4">&#42;Presentar documentación</li>
+                    </ul>
+                </div>
+                <div class="junior">
+                    <ul>
+                        <li class="li-1">junior</li>
+                        <li class="li-2">Tienen un descuento</li>
+                        <li class="li-3">15&#37;</li>
+                        <li class="li-4">&#42;Presentar documentación</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-main">
+
+                <div class="container-info">
+                    <ul>
+                        <li class="li-venta">VENTA</li>
+                        <li class="li-valor">VALOR DE TICKET &#36;200</li>
+                    </ul>
+                </div>
+
+              <form action="" id="form" onsubmit="return update()">
+
+                <div class="container-form">
+                    <div class="form-div">
+                        <div class="div-1">
+                            <input type="text" placeholder="Nombre" required >
+                            <input type="text" placeholder="Apellido" required >
+                        </div>
+                        
+
+                        <div>
+                            <input type="email" placeholder="Correo" required >
+                        </div>
+
+                    </div>
+                    
+                    
+
+                    <div class="container-form-2">
+                        <div class="div-2">
+                            <label for="Cantidad" class="label">Cantidad</label> <br>
+                            <input type="number" placeholder="Cantidad" id="Cantidad" required  oninput="total()">  
+                        </div>
+                        <div class="div-2">
+                            <label for="select" class="label">Categoria</label> <br>
+                            <select name="test" id="select" onchange="total()">
+                                <option value="80">Estudiante</option>
+                                <option value="50">Trainee</option>
+                                <option value="15">Junior</option>
+                            </select>
+                        </div>
+                        
+                    
+                    </div>
+
+                 </div>
+                    
+                <div class="container-total">
+                    <p>Total a Pagar: &#36; <span id="total"></span></p>
+                </div>
+
+                <div class="form-buttons">
+                    <input type="reset" value="Borrar" onclick="restore()">
+                    <input type="submit" value="Resumen">
+                </div>
+                </form>
+            </div>
+    </section>
+
+    <footer>
+
+        <div>Preguntas frecuentes</div>
+        <div>Contáctanos</div>
+        <div>Prensa</div>
+        <div>Conferencias</div>
+        <div>Términos y condiciones</div>
+        <div>Privacidad</div>
+        <div>Estudiantes</div>
+
+    </footer>
+
+
+    <script src="tickets.js"></script>
+    
+
+</body>
+
+</html>
